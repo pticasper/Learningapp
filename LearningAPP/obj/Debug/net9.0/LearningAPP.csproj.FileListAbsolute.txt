@@ -141,3 +141,7 @@ C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\Azure.Secur
 C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\DnsClient.dll
 C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\Microsoft.Azure.AppConfiguration.AspNetCore.dll
 C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\Microsoft.Extensions.Configuration.AzureAppConfiguration.dll
+C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\Microsoft.Bcl.TimeProvider.dll
+C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\Microsoft.FeatureManagement.dll
+C:\Users\kerim\source\visual-code-repos\LearningAPP\bin\Debug\net9.0\Microsoft.FeatureManagement.AspNetCore.dll
+C:\Users\kerim\source\visual-code-repos\LearningAPP\obj\Debug\net9.0\LearningAPP.MvcApplicationPartsAssemblyInfo.cs

@@ -164,6 +164,22 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
+      "Microsoft.Bcl.TimeProvider/8.0.1": {
+        "type": "package",
+        "compile": {
+          "lib/net8.0/Microsoft.Bcl.TimeProvider.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net8.0/Microsoft.Bcl.TimeProvider.dll": {
+            "related": ".xml"
+          }
+        },
+        "build": {
+          "buildTransitive/net6.0/_._": {}
+        }
+      },
       "Microsoft.Data.SqlClient/6.0.1": {
         "type": "package",
         "dependencies": {
@@ -262,7 +278,7 @@
           "Microsoft.Extensions.Primitives": "9.0.0"
         },
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/Microsoft.Extensions.Caching.Abstractions.dll": {
             "related": ".xml"
           }
         },
@@ -285,7 +301,7 @@
           "Microsoft.Extensions.Primitives": "9.0.0"
         },
         "compile": {
-          "lib/net9.0/_._": {
+          "lib/net9.0/Microsoft.Extensions.Caching.Memory.dll": {
             "related": ".xml"
           }
         },
@@ -349,6 +365,22 @@
         },
         "runtime": {
           "lib/netstandard2.1/Microsoft.Extensions.Configuration.AzureAppConfiguration.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.Extensions.Configuration.Binder/2.1.10": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "2.1.1"
+        },
+        "compile": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll": {
             "related": ".xml"
           }
         }
@@ -463,6 +495,45 @@
         "build": {
           "buildTransitive/net8.0/_._": {}
         }
+      },
+      "Microsoft.FeatureManagement/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.Bcl.TimeProvider": "8.0.1",
+          "Microsoft.Extensions.Caching.Memory": "2.1.23",
+          "Microsoft.Extensions.Configuration.Binder": "2.1.10",
+          "Microsoft.Extensions.Logging": "2.1.1",
+          "System.Diagnostics.DiagnosticSource": "8.0.1"
+        },
+        "compile": {
+          "lib/netstandard2.1/Microsoft.FeatureManagement.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/Microsoft.FeatureManagement.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Microsoft.FeatureManagement.AspNetCore/4.0.0": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.FeatureManagement": "4.0.0"
+        },
+        "compile": {
+          "lib/net9.0/Microsoft.FeatureManagement.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net9.0/Microsoft.FeatureManagement.AspNetCore.dll": {
+            "related": ".xml"
+          }
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       },
       "Microsoft.Identity.Client/4.61.3": {
         "type": "package",
@@ -674,23 +745,20 @@
           "buildTransitive/net8.0/_._": {}
         }
       },
-      "System.Diagnostics.DiagnosticSource/6.0.1": {
+      "System.Diagnostics.DiagnosticSource/8.0.1": {
         "type": "package",
-        "dependencies": {
-          "System.Runtime.CompilerServices.Unsafe": "6.0.0"
-        },
         "compile": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
         "runtime": {
-          "lib/net6.0/System.Diagnostics.DiagnosticSource.dll": {
+          "lib/net8.0/System.Diagnostics.DiagnosticSource.dll": {
             "related": ".xml"
           }
         },
         "build": {
-          "buildTransitive/netcoreapp3.1/_._": {}
+          "buildTransitive/net6.0/_._": {}
         }
       },
       "System.Diagnostics.EventLog/9.0.0": {
@@ -1090,6 +1158,32 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "Microsoft.Bcl.TimeProvider/8.0.1": {
+      "sha512": "C7kWHJnMRY7EvJev2S8+yJHZ1y7A4ZlLbA4NE+O23BDIAN5mHeqND1m+SKv1ChRS5YlCDW7yAMUe7lttRsJaAA==",
+      "type": "package",
+      "path": "microsoft.bcl.timeprovider/8.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "Icon.png",
+        "LICENSE.TXT",
+        "PACKAGE.md",
+        "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/Microsoft.Bcl.TimeProvider.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
+        "buildTransitive/netcoreapp2.0/Microsoft.Bcl.TimeProvider.targets",
+        "lib/net462/Microsoft.Bcl.TimeProvider.dll",
+        "lib/net462/Microsoft.Bcl.TimeProvider.xml",
+        "lib/net8.0/Microsoft.Bcl.TimeProvider.dll",
+        "lib/net8.0/Microsoft.Bcl.TimeProvider.xml",
+        "lib/netstandard2.0/Microsoft.Bcl.TimeProvider.dll",
+        "lib/netstandard2.0/Microsoft.Bcl.TimeProvider.xml",
+        "microsoft.bcl.timeprovider.8.0.1.nupkg.sha512",
+        "microsoft.bcl.timeprovider.nuspec",
+        "useSharedDesignerContext.txt"
+      ]
+    },
     "Microsoft.Data.SqlClient/6.0.1": {
       "sha512": "v7HxnYYXGGCJilxeQ4Pdks+popVuGajBpHmau0RU4ACIcbfs5qCNUnCogGpZ+CJ//8Qafhxq7vc5a8L9d6O8Eg==",
       "type": "package",
@@ -1282,6 +1376,19 @@
         "lib/netstandard2.1/Microsoft.Extensions.Configuration.AzureAppConfiguration.xml",
         "microsoft.extensions.configuration.azureappconfiguration.8.0.0.nupkg.sha512",
         "microsoft.extensions.configuration.azureappconfiguration.nuspec"
+      ]
+    },
+    "Microsoft.Extensions.Configuration.Binder/2.1.10": {
+      "sha512": "anSrDPFjcz6oBQjrul2vSHCg/wOZ2gJc1ZNzm03LtkA9S17x8xnkLaT599uuFnl6JSZJgQy4hoHVzt2+bIDc9w==",
+      "type": "package",
+      "path": "microsoft.extensions.configuration.binder/2.1.10",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.dll",
+        "lib/netstandard2.0/Microsoft.Extensions.Configuration.Binder.xml",
+        "microsoft.extensions.configuration.binder.2.1.10.nupkg.sha512",
+        "microsoft.extensions.configuration.binder.nuspec"
       ]
     },
     "Microsoft.Extensions.DependencyInjection/6.0.0": {
@@ -1502,6 +1609,38 @@
         "microsoft.extensions.primitives.9.0.0.nupkg.sha512",
         "microsoft.extensions.primitives.nuspec",
         "useSharedDesignerContext.txt"
+      ]
+    },
+    "Microsoft.FeatureManagement/4.0.0": {
+      "sha512": "NUm3m815Qx9Y63W0WArpwv6auyK/mRInlqadHFf3oiC8z6hpy61LVDY3JgWE/PV4PVKKUg2MO9LkI6q92O60Hg==",
+      "type": "package",
+      "path": "microsoft.featuremanagement/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/netstandard2.0/Microsoft.FeatureManagement.dll",
+        "lib/netstandard2.0/Microsoft.FeatureManagement.xml",
+        "lib/netstandard2.1/Microsoft.FeatureManagement.dll",
+        "lib/netstandard2.1/Microsoft.FeatureManagement.xml",
+        "microsoft.featuremanagement.4.0.0.nupkg.sha512",
+        "microsoft.featuremanagement.nuspec"
+      ]
+    },
+    "Microsoft.FeatureManagement.AspNetCore/4.0.0": {
+      "sha512": "BI4zVyKPrLrCGeIbBAgc9wC/ctm+MY2biJY1ZTxaUjMWwyZlwWrPAKsiuSUCu7aJtW/4z6kbpLNOhXTM2GwhvA==",
+      "type": "package",
+      "path": "microsoft.featuremanagement.aspnetcore/4.0.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net6.0/Microsoft.FeatureManagement.AspNetCore.dll",
+        "lib/net6.0/Microsoft.FeatureManagement.AspNetCore.xml",
+        "lib/net8.0/Microsoft.FeatureManagement.AspNetCore.dll",
+        "lib/net8.0/Microsoft.FeatureManagement.AspNetCore.xml",
+        "lib/net9.0/Microsoft.FeatureManagement.AspNetCore.dll",
+        "lib/net9.0/Microsoft.FeatureManagement.AspNetCore.xml",
+        "microsoft.featuremanagement.aspnetcore.4.0.0.nupkg.sha512",
+        "microsoft.featuremanagement.aspnetcore.nuspec"
       ]
     },
     "Microsoft.Identity.Client/4.61.3": {
@@ -1805,27 +1944,31 @@
         "useSharedDesignerContext.txt"
       ]
     },
-    "System.Diagnostics.DiagnosticSource/6.0.1": {
-      "sha512": "KiLYDu2k2J82Q9BJpWiuQqCkFjRBWVq4jDzKKWawVi9KWzyD0XG3cmfX0vqTQlL14Wi9EufJrbL0+KCLTbqWiQ==",
+    "System.Diagnostics.DiagnosticSource/8.0.1": {
+      "sha512": "vaoWjvkG1aenR2XdjaVivlCV9fADfgyhW5bZtXT23qaEea0lWiUljdQuze4E31vKM7ZWJaSUsbYIKE3rnzfZUg==",
       "type": "package",
-      "path": "system.diagnostics.diagnosticsource/6.0.1",
+      "path": "system.diagnostics.diagnosticsource/8.0.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "Icon.png",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
+        "buildTransitive/net461/System.Diagnostics.DiagnosticSource.targets",
+        "buildTransitive/net462/_._",
+        "buildTransitive/net6.0/_._",
         "buildTransitive/netcoreapp2.0/System.Diagnostics.DiagnosticSource.targets",
-        "buildTransitive/netcoreapp3.1/_._",
-        "lib/net461/System.Diagnostics.DiagnosticSource.dll",
-        "lib/net461/System.Diagnostics.DiagnosticSource.xml",
-        "lib/net5.0/System.Diagnostics.DiagnosticSource.dll",
-        "lib/net5.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net462/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net462/System.Diagnostics.DiagnosticSource.xml",
         "lib/net6.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/net6.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net7.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net7.0/System.Diagnostics.DiagnosticSource.xml",
+        "lib/net8.0/System.Diagnostics.DiagnosticSource.dll",
+        "lib/net8.0/System.Diagnostics.DiagnosticSource.xml",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.dll",
         "lib/netstandard2.0/System.Diagnostics.DiagnosticSource.xml",
-        "system.diagnostics.diagnosticsource.6.0.1.nupkg.sha512",
+        "system.diagnostics.diagnosticsource.8.0.1.nupkg.sha512",
         "system.diagnostics.diagnosticsource.nuspec",
         "useSharedDesignerContext.txt"
       ]
@@ -2256,7 +2399,8 @@
   "projectFileDependencyGroups": {
     "net9.0": [
       "Microsoft.Azure.AppConfiguration.AspNetCore >= 8.0.0",
-      "Microsoft.Data.SqlClient >= 6.0.1"
+      "Microsoft.Data.SqlClient >= 6.0.1",
+      "Microsoft.FeatureManagement.AspNetCore >= 4.0.0"
     ]
   },
   "packageFolders": {
@@ -2318,6 +2462,10 @@
           "Microsoft.Data.SqlClient": {
             "target": "Package",
             "version": "[6.0.1, )"
+          },
+          "Microsoft.FeatureManagement.AspNetCore": {
+            "target": "Package",
+            "version": "[4.0.0, )"
           }
         },
         "imports": [
