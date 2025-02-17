@@ -292,3 +292,4 @@ C:\Users\kerim\source\repos\LearningAPP\LearningAPP\obj\Debug\net9.0\refint\Lear
 C:\Users\kerim\source\repos\LearningAPP\LearningAPP\obj\Debug\net9.0\LearningAPP.pdb
 C:\Users\kerim\source\repos\LearningAPP\LearningAPP\obj\Debug\net9.0\LearningAPP.genruntimeconfig.cache
 C:\Users\kerim\source\repos\LearningAPP\LearningAPP\obj\Debug\net9.0\ref\LearningAPP.dll
+C:\Users\kerim\source\repos\LearningAPP\LearningAPP\bin\Debug\net9.0\Newtonsoft.Json.dll
